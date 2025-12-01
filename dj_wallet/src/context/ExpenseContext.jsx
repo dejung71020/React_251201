@@ -36,9 +36,13 @@ export function ExpenseProvider({ children }) {
     setTransactions(transactions.filter((item) => item.id !== id));
   };
 
+  const resetData = () => {
+    setTransactions([]); // 빈 배열로 만들면 끝! (LocalStorage도 자동으로 비워짐)
+  };
+
   return (
     <ExpenseContext.Provider
-      value={{ transactions, addTransaction, deleteTransaction }}
+      value={{ transactions, addTransaction, deleteTransaction, resetData }}
     >
       {children}
     </ExpenseContext.Provider>
