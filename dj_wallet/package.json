@@ -2,7 +2,7 @@
   "name": "dj_wallet",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://dejung71020.github.io/React_251201",
+  "homepage": "https://dejung71020.github.io/REACT_251201",
   "type": "module",
   "scripts": {
     "dev": "vite",
